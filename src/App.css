@@ -1,12 +1,23 @@
-.App {
+
+
+/* 1024px and above FOR DESKTOP VIEW */
+
+ .App {
   text-align: center;
 }
+.reddit-logo-container{
+ display: flex;
+ align-items: center;
+ width: 50%;
+}
+
 .searchBar{
-  width: 500px;
   padding: 8px 12px;
   border: 1px solid #ddd;
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 100%;
   box-sizing: border-box;
+  
 }
 .searchBar:hover{
   border-color: #b0b0b0;
@@ -20,7 +31,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /*height: 40vmin;*/
   pointer-events: none;
 }
 
@@ -31,13 +42,15 @@
 }
 
 .App-header {
-  background-color: #a4b7d4;
-  min-height: 10vh;
+  background-color: white;
+  height: 11vh;
   display: flex;
   align-items: center;
- justify-content: space-between;
+  padding: 0 60px;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.2);
 }
 
 .App-link {
@@ -53,6 +66,29 @@
   }
 }
 .searchContainer{
+  width: 50%;
   display: flex;
   align-items: center;
+}
+
+
+
+/* 768px – 1023px FOR TABLET VIEW */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .searchBar{
+  width: 80%;
+  padding: 8px 2px;
+  }
+  /* tablet styles */
+}
+
+
+/* Up to 767px FOR MOBILE VIEW */
+@media (max-width: 767px) {
+  .App-header {
+  padding: 0 10px;
+  
+}
+
+  /* mobile styles */
 }

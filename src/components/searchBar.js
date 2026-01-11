@@ -31,7 +31,7 @@ function SearchBar (prop){
                  value={prop.input} 
                  onChange={handleInput} 
               />
-                <Search onClick={handleIconClick} style={{cursor: "pointer"}} />
+                <Search onClick={handleIconClick} style={{cursor: "pointer", color:"grey", marginLeft:"5px"}} />
             </form>
         </>
     );
